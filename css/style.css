@@ -35,7 +35,7 @@ body{
 	padding:0;
 	margin:0;
 	font-family:'myriadpro-semibold';
-	background-color: #000;
+	background-image: url('../img/carbonFibre.png');
 }
 body a{
     transition:0.5s all;
@@ -387,15 +387,15 @@ h5.breaking {
 .confer {
 	margin-bottom: 4em;
 }
-.world-news-grid {
+.slider-grid {
 	width:31.5%;
 	float:left;
 	margin-right:2.75%;
 }
-.world-news-grid img {
+.slider-grid img {
 	width:100%;
 }
-.world-news-grid:nth-child(3){
+.slider-grid:nth-child(3){
 	margin-right:0;
 }
 .left-posts {
@@ -430,14 +430,14 @@ h5.breaking {
 	padding:3px 8px;
 	  margin-top: 8px;
 }
-.world-news-grid p {
+.slider p {
 	color: #fff;
 	font-size: 0.95em;
 	font-weight: normal;
 	line-height: 1.5em;
 	margin: 3px 0 8px 0;
 }
-.world-news-grid a {
+.slider a {
 	color:#cf0000;
 	font-weight:bold;
 	font-size:0.875em;
@@ -1886,7 +1886,7 @@ text-align: left;
 	.rslides_tabs {
 		bottom: 1%;
 	}
-	.world-news-grid p {
+	.slider-grid p {
 		font-size: 0.875em;
 	}
 	.desk p {
@@ -2214,15 +2214,15 @@ text-align: left;
 		border-bottom: 2px solid #cf0000;
 		margin-bottom: 0.6em;
 	}
-	.world-news-grid {
+	.slider-grid {
 		width: 32%;
 		margin-right: 2%;
 	}
-	.world-news-grid h5 {
+	.slider-grid h5 {
 		font-size: 0.9em;
 		margin-top: 6px;
 	}
-	.world-news-grid p {
+	.slider-grid p {
 		font-size: 0.825em;
 	}
 	.sign_up {
@@ -2383,7 +2383,7 @@ text-align: left;
 	h3.sn {
 		font-size: 1.3em;
 	}
-	.world-news-grid a {
+	.slider-grid a {
 		font-size: 0.8em;
 	}
 	.main-title-head h3 {

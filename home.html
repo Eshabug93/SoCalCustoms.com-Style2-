@@ -16,6 +16,18 @@
 </head>
 
 <body>
+	<div id="fb-root">
+	<script>
+	(function(d, s, id) {
+  	var js, fjs = d.getElementsByTagName(s)[0];
+  	if (d.getElementById(id)) return;
+  	js = d.createElement(s); js.id = id;
+  	js.src = "http://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  	fjs.parentNode.insertBefore(js, fjs);
+	}
+	(document, 'script', 'facebook-jssdk'));
+	</script>
+	</div>
 	<div class="container bckgrnd">	
 		<div class="wrap">
 			<div class="header">
@@ -105,20 +117,20 @@
 								<h3>Recent Shows</h3>
 								<div class="clearfix"></div>
 							</div>
-							<div class="world-news-grids">
-								<div class="world-news-grid">
+							<div class="slider-grids">
+								<div class="slider-grid">
 									<img src="images/n1.jpg" alt="" />
 									<a href="singlepage.html" class="title">Lorem ipsum dolor sit amet, consectetur </a>
 									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
 									<a href="shows.html">Read More</a>
 								</div>
-								<div class="world-news-grid">
+								<div class="slider-grid">
 									<img src="images/n2.jpg" alt="" />
 									<a href="singlepage.html" class="title">Lorem ipsum dolor sit amet, consectetur </a>
 									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
 									<a href="shows.html">Read More</a>
 								</div>
-								<div class="world-news-grid">
+								<div class="slider-grid">
 									<img src="images/n3.jpg" alt="" />
 									<a href="singlepage.html" class="title">Lorem ipsum dolor sit amet, consectetur </a>
 									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
@@ -183,16 +195,7 @@
 							</div>	
 							<div class="tech-news-grids">
 								<div class="left-tech-news">
-									<div class="tech-news-grid span_66">
-										<a href="singlepage.html">Lorem ipsum dolor sit amet conse ctetur adipiscing elit  </a>
-										<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ... </p>
-										<p>by<a href="#">John Doe </a>  |  29 comments</p>
-									</div>
-									<div class="tech-news-grid">
-										<a href="singlepage.html">Lorem ipsum dolor sit amet conse ctetur adipiscing elit  </a>
-										<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor ... </p>
-										<p>by<a href="#">John Doe </a>  |  29 comments</p>
-									</div>
+									<div class="fb-page" data-href="https://www.facebook.com/socalcustomsdotcom/" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/socalcustomsdotcom/"><a href="https://www.facebook.com/socalcustomsdotcom/">SoCalCustoms.com</a></blockquote></div></div>
 								</div>
 								<div class="right-tech-news">
 									<div class="tech-news-grid span_66">
@@ -236,106 +239,6 @@
 		</div>
 	</div>
 	<script src="js/modernizr.js"></script>	
-	<script src="js/jquery.animateSlider.min.js"></script>
 	<script src="js/jquery.animateSlider.js"></script>
-	<script>
-		 $(".anim-slider").animateSlider(
-		 	{
-		 		autoplay	:true,
-		 		interval	:5500,
-		 		animations 	: 
-				{
-					0	: 	//Slide No1
-					{
-						li	: 
-						{
-							show   	  : "fadeIn",
-							hide 	  : "fadeOutLeftBig",
-							delayShow : "delay0.5s"
-	 					},
-	 					"#looks"	:
-	 					{
-	 						show 	  : "rotateInUpLeft",
-							delayShow : "delay1s"
-	 					},
-	 					"#amazing" 	:
-	 					{
-							show   	  : "rotateInUpLeft",
-							delayShow : "delay1-5s"
-	 					},
-	 					"#place"	:
-	 					{
-	 						show 	  : "rotateInUpLeft",
-							delayShow : "delay2s"
-						}	
-					},
-					1	: //Slide No2
-					{	
-						li			:
-						{
-							show 		: "fadeInLeft",
-							hide 		: "fadeOutLeftBig",
-							delayShow   : "delay0-5s"
-						},
-						"#img1"		:
-						{
-							show 		: "fadeInRight",
-							delayShow   : "delay2s"
-						},
-						"#img2"		:
-						{
-							show 		: "fadeInLeft",
-							delayShow   : "delay3s"
-							
-						},
-						"#img3"		:
-						{
-							show 		: "fadeInRight",
-							hide 		: "fadeOutLeftBig",
-							delayShow   : "delay4s"
-						}
-					},
-					2:
-					{
-						li			:
-						{
-							show 		: "fadeInUp",
-							hide 		: "fadeOutDownBig",
-							delayShow   : "delay0-5s"
-						},
-						"#T"			:
-						{
-							show 		: "slideInLeft",
-							delayShow   : "delay1-5s"
-						},
-						"#r"			:
-						{
-							show 		: "bounceInRight",
-							delayShow   : "delay2s"
-						},
-						"#y"			:
-						{
-							show 		: "fadeInRight",
-							delayShow   : "delay2-5s"
-						},
-						"#i"			:
-						{
-							show 		: "rollIn",
-							delayShow   : "delay3s"
-						},
-						"#t"			:
-						{
-							show 		: "rollIn",
-							delayShow   : "delay3s"
-						},
-						"#mark"			:
-						{
-							show 		: "rotateIn",
-							delayShow   : "delay3-5s"
-						},
-					}
-				}
-		 	});
-		</script>
 </body>
 </html>
