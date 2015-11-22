@@ -1,22 +1,21 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 	<title>SoCalCustoms.com - Home</title>
+  <link href="css/jquery.animateSlider.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/jquery.animateSlider.css" rel="stylesheet" type="text/css" media="all" />
-	<script src="js/jquery.min.js"></script>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <script src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
-	<script src="js/jquery.animateSlider.js"></script>
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="" />
 </head>
 
 <body>
-	<div id="fb-root">
+<!--	<div id="fb-root">
 	<script>
 	(function(d, s, id) {
   	var js, fjs = d.getElementsByTagName(s)[0];
@@ -26,88 +25,75 @@
   	fjs.parentNode.insertBefore(js, fjs);
 	}
 	(document, 'script', 'facebook-jssdk'));
-	</script>
+	</script>-->
 	</div>
-	<div class="container bckgrnd">	
-		<div class="wrap">
-			<div class="header">
-				<div class="header-left">
-					<div class="logo">
-						<a href="home.html">
-							<img src="img/logo.png" alt="SoCalCustoms.com Logo" />
-						</a>
-					</div>
-				</div>
-				<div class="social-icons">
-					<li><a href="#"><i class="twitter"></i></a></li>
-					<li><a href="#"><i class="facebook"></i></a></li>
-					<li><a href="#"><i class="rss"></i></a></li>
-				</div>
-				<div class="clearfix"></div>
-				<div class="header-right">
-					<div class="search">
-						<form>
-							<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"/>
-							<input type="submit" value="">
-						</form>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<span class="menu"></span>
-			<div class="menu-strip">
-				<ul>           
-					<li><a href="home.html">HOME</a></li>
-					<li><a href="shows.html">SHOWS</a></li>
-					<li><a href="featured.html">FEATURED</a></li>
-					<li><a href="models.html">MODELS</a></li>
-					<li><a href="shop.html">SHOP</a></li>
-					<li><a href="about.html">ABOUT</a></li>
-					<li><a href="contact.html">CONTACT</a></li>
-				</ul>
-			</div>
-			<!-- script for menu -->
-			<script>
-				$( "span.menu" ).click(function() {
-				  $( ".menu-strip" ).slideToggle( "slow", function() {
-				  });
-				});
-			</script>
-		</div>
-	</div>
-	<ul class="anim-slider">
-	<!-- Slide No1 -->
-		<li class="anim-slide">
-			<h1 id="looks">LOOKS</h1>
-			<h1 id="amazing">PRETTY AMAZING</h1>
-			<h1 id="place">PLACE</h1>
-		</li>
-		<!-- Slide No2 -->
-		<li class="anim-slide">
-			<div id="img1"></div>
-			<div id="img2"></div>
-			<div id="img3"></div>
-		</li>
-		<!-- Slide No3 -->
-		<li class="anim-slide">
-			<h1 id="T">T</h1>
-			<h1 id="r">r</h1>
-			<h1 id="y">y</h1>
-			<h1 id="i">i</h1>
-			<h1 id="t">t</h1>
-			<h1 id="mark">!</h1>
-		</li>
-		<!-- Arrows -->
-		<nav class="anim-arrows">
-			<span class="anim-arrows-prev">
-				<i class="fa fa-angle-left fa-3x"></i>
-			</span>
-			<span class="anim-arrows-next">
-				<i class="fa fa-angle-right fa-3x"></i>
-			</span>
-		</nav>
-	</ul>
+  <div class=social-header>
+    <div class="col-md-10 social-icons">
+      <li><a href="#"><i class="twitter"></i></a></li>
+      <li><a href="#"><i class="facebook"></i></a></li>
+      <li><a href="#"><i class="rss"></i></a></li>
+    </div>
+  </div>
+  <div class="social-header-bottom"></div>
+  <span class="menu"></span>
+  <div class="header-left">
+    <div class="logo">
+      <a href="home.html"><img src="img/logo.png" alt="SoCalCustoms.com Logo" /></a>
+    </div>
+  </div>
+  <div class="menu-strip">
+    <ul>           
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="shows.html">SHOWS</a></li>
+      <li><a href="featured.html">FEATURED</a></li>
+      <li><a href="models.html">MODELS</a></li>
+      <li><a href="shop.html">SHOP</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+  <!-- script for menu -->
+  <script>
+    $( "span.menu" ).click(function() {
+      $( ".menu-strip" ).slideToggle( "slow", function() {
+      });
+    });
+  </script>
+  <section>
+    <ul class="anim-slider">
+      <!-- Slide No1 -->
+      <li class="anim-slide">
+        <h1 id="looks">LOOKS</h1>
+        <h1 id="amazing">PRETTY AMAZING</h1>
+        <h1 id="place">PLACE</h1>
+      </li>
+      <!-- Slide No2 -->
+      <li class="anim-slide">
+        <div id="img1"></div>
+        <div id="img2"></div>
+        <div id="img3"></div>
+      </li>
+    
+      <!-- Slide No3 -->
+      <li class="anim-slide">
+        <h1 id="T">T</h1>
+        <h1 id="r">r</h1>
+        <h1 id="y">y</h1>
+        <h1 id="i">i</h1>
+        <h1 id="t">t</h1>
+        <h1 id="mark">!</h1>
+      </li>
+      <!-- Arrows -->
+      <nav class="anim-arrows">
+        <span class="anim-arrows-prev">
+          <i class="fa fa-angle-left fa-3x"></i>
+        </span>
+        <span class="anim-arrows-next">
+          <i class="fa fa-angle-right fa-3x"></i>
+        </span>
+      </nav>
+      <!-- Dynamically created dots -->
+    </ul>
+  </section>
 			<div class="container">
 				<div class="wrap">
 				<div class="posts">
@@ -188,6 +174,46 @@
 							</div>
 							<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 						</div>
+              <div class="about-section">
+                <div class="col-md-7 about-left">
+                  <div class="main-title-head">
+                    <h3>About the Owner</h3>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="abt_image">
+                    <img src="images/abt_pic.jpg" alt="" />
+                  </div>
+                  <h5>Lorem ipsum eos accusamu dolore massa lore fugharum quidemed rerum faciliseme iusto ssimos ducimus.</h5>
+                  <p>Ses praesentiumvoluptatum delenitimos atqcorrupti quos dolores et quas molestias exceuri occaecati cupiditate non prdent imilique.</p>
+                  <p>Sunt in culpaqui officia mos deserunt mollitia animid est laborum dolorum fuharumos.Ses praesentiumvoluptatum delenitimos atqcorrupti quos dolores et quas molestias exceuri occaecati cupiditate non prdent imiliqueunt in culpaqui officia mos deserunt mollitia animid est laborum dolorum fuharumosiemen quidemed. Rerumol facilisest et expedita distinc.</p>
+                  <p>Nam libero temprecum soluta nobis est eligendi optio cumquenihil perspic iatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit.</p>
+                </div>
+                <div class="col-md-5 about-right">
+                  <div class="main-title-head">
+                    <h3>What We Offer</h3>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="offer">
+                    <h4>1</h4>
+                    <a href="#">LOREM IPSUM DOLOR SIT CONSECTETUER</a>
+                    <div class="clearfix"></div>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitat ion ullamcode laboris nisi dolore massa ealiquipx eato commodo consectetuor massa perspiciatis unde omnis iste natus error sit.</p>
+                  </div>
+                  <div class="offer">
+                    <h4>2</h4>
+                    <a href="#">PRAESENT VESTIBULUM MOLESTIE LACUS</a>
+                    <div class="clearfix"></div>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitat ion ullamcode laboris nisi dolore massa ealiquipx eato commodo consectetuor massa perspiciatis unde omnis iste natus error sit.</p>
+                  </div>
+                  <div class="offer">
+                    <h4>3</h4>
+                    <a href="#">SED UT PERSPICIATIS UNDE OMNIS ISTE</a>
+                    <div class="clearfix"></div>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitat ion ullamcode laboris nisi dolore massa ealiquipx eato commodo consectetuor massa perspiciatis unde omnis iste natus error sit.</p>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
 						<div class="tech-news">
 							<div class="main-title-head">
 								<h3>Social Media</h3>
@@ -236,9 +262,108 @@
 					<p>NOT FOR OFFICIAL USE. Created by Group 0011-5 for DIG4104C Web Design Workshop. </p>
 				</div>
 			</div>
+      <script src="js/modernizr.js"></script>	
+      <script src="js/jquery.animateSlider.js"></script>
+      <script>
+      $(".anim-slider").animateSlider(
+		 	{
+		 		autoplay	:true,
+		 		interval	:5500,
+		 		animations 	: 
+				{
+					0	: 	//Slide No1
+					{
+						li	: 
+						{
+							show   	  : "fadeIn",
+							hide 	  : "fadeOutLeftBig",
+							delayShow : "delay0.5s"
+	 					},
+	 					"#looks"	:
+	 					{
+	 						show 	  : "rotateInUpLeft",
+							delayShow : "delay1s"
+	 					},
+	 					"#amazing" 	:
+	 					{
+							show   	  : "rotateInUpLeft",
+							delayShow : "delay1-5s"
+	 					},
+	 					"#place"	:
+	 					{
+	 						show 	  : "rotateInUpLeft",
+							delayShow : "delay2s"
+						}	
+					},
+					1	: //Slide No2
+					{	
+						li			:
+						{
+							show 		: "fadeInLeft",
+							hide 		: "fadeOutLeftBig",
+							delayShow   : "delay0-5s"
+						},
+						"#img1"		:
+						{
+							show 		: "fadeInRight",
+							delayShow   : "delay2s"
+						},
+						"#img2"		:
+						{
+							show 		: "fadeInLeft",
+							delayShow   : "delay3s"
+							
+						},
+						"#img3"		:
+						{
+							show 		: "fadeInRight",
+							hide 		: "fadeOutLeftBig",
+							delayShow   : "delay4s"
+						}
+					},
+					2:
+					{
+						li			:
+						{
+							show 		: "fadeInUp",
+							hide 		: "fadeOutDownBig",
+							delayShow   : "delay0-5s"
+						},
+						"#T"			:
+						{
+							show 		: "slideInLeft",
+							delayShow   : "delay1-5s"
+						},
+						"#r"			:
+						{
+							show 		: "bounceInRight",
+							delayShow   : "delay2s"
+						},
+						"#y"			:
+						{
+							show 		: "fadeInRight",
+							delayShow   : "delay2-5s"
+						},
+						"#i"			:
+						{
+							show 		: "rollIn",
+							delayShow   : "delay3s"
+						},
+						"#t"			:
+						{
+							show 		: "rollIn",
+							delayShow   : "delay3s"
+						},
+						"#mark"			:
+						{
+							show 		: "rotateIn",
+							delayShow   : "delay3-5s"
+						},
+					}
+				}
+		 	});
+      </script>
 		</div>
 	</div>
-	<script src="js/modernizr.js"></script>	
-	<script src="js/jquery.animateSlider.js"></script>
 </body>
 </html>

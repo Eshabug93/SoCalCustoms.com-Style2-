@@ -69,49 +69,47 @@ label{
 }
 
 /*-----start-header----*/
-.wrap {
+.header-wrap{
+  max-width: 100%;
 	background:#232323;
 	padding:1em 1.5em;
-	margin:5em 0;
+}
+.wrap {
+	background:#232323;
+	padding:1em;
 }
 .header-left {
 	float:left;
 }
-.social-icons {
-	float: right;
-}
 .logo img{
-	width: 150px;
+	width: 100%;
 }
 .logo a {
 	text-decoration: none;
 	display: block;
 	text-transform:uppercase;
 }
-.logo a h6 {
-	color:#191919;
-	font-family: 'georgia';
-	font-weight:500;
-	font-size:1.1em;
-}
-.logo a h1 {
-	color:#191919;
-	font-family: 'georgia';
-	font-weight:500;
-	font-size:2.2em;
-}
 .logo {
-	margin-top: 10px;
-}
-.logo a h1 span {
-	color:#cf0000;
+  margin-left: 200px;
+  margin-bottom: 10px;
 }
 .header-right {
 	float:right;
 	width: 58%;
 	margin-top: -20px;
 }
+.social-header-bottom{
+  background-color: #cf0000;
+  min-height: 7px;
+  width: 100%;
+}
+.social-header{
+  background-color: #232323;
+  min-height: 50px;
+  width: 100%;
+}
 .social-icons {
+  padding: 5px 0;
 	text-align:right;
 }
 .social-icons li {
@@ -220,17 +218,20 @@ a.btn {color:#666; text-align: center; text-decoration: none;}
 	height: 32px;
 }
 .menu-strip {
-	background: #070808;
-	margin: 1em 0;
+	background: #232323;
+  margin: 50px 0;
 	padding: 1em 0em 0.8em 0px;
 }
 .menu-strip ul {
-	display: table;
+	display: block;
+  text-align:center;
 	padding: 0;
 	width: 100%;
+  margin-left: 135px;
 }
 .menu-strip ul li {
-	display:table-cell;
+  display: inline-block;
+	list-style: none;
 	padding: 0;
 	text-align: center;
 }
@@ -384,6 +385,58 @@ h5.breaking {
 		bottom: 25px;
 	}
 }
+
+/*Animated Slider*/
+.anim-slider{background-color: #fff;}
+.anim-slide{opacity: 0;}
+.anim-slide-this{opacity: 1;}
+
+li.anim-slide:nth-of-type(1){background:#fff url("../img/island-view.jpg") 100%/cover;}
+li.anim-slide:nth-of-type(2){background:#fff url("../img/summer-experience.jpg") 100%/cover;}
+li.anim-slide:nth-of-type(3){background:#fff url("../img/beach.jpg") 100%/cover;}
+
+li.anim-slide:nth-of-type(1)>h1
+{
+	position: static;
+	display: inline-block;
+	margin: 0;
+	font-size:40px;
+	padding: 0px 25px;
+}
+h1#looks{background-color:#fff;color:#34495e;}
+h1#amazing{background-color:#34495e;color:#fff;margin: 0px -5px;}
+h1#place{background-color:#3498db;color:#fff;}
+
+
+li.anim-slide:nth-of-type(2)>div
+{
+	width: 100%;
+	height: 100%;
+}
+div#img1{background:#fff url("../img/diving1.jpg") 100%/cover;}
+div#img2{background:#fff url("../img/diving2.jpg") 100%/cover;}
+div#img3{background:#fff url("../img/diving3.jpg") 100%/contain;}
+
+li.anim-slide:nth-of-type(3)>h1
+{
+	margin: 0;
+	font-size:60px;
+	color: #225A86;
+}
+h1#T{top:30%;left:25%;}
+h1#r{top:30%;left: 28%;}
+h1#y{top:30%;left: 30%;}
+h1#i{top:30%;left: 35%;}
+h1#t{top:30%;left: 37%;}
+h1#mark{top:30%;left: 39%;}
+
+div#demo{text-align: center;}
+div#demo>a{display:inline-block;text-decoration: none;}
+div#demo>a>h4{padding: 5px 8px;margin: 20px;background-color: #225A86;color: #fff;box-shadow:inset 0 -2px 0 rgba(0,0,0,0.15);}
+p#credits{z-index:-1;position: fixed;bottom: 0px;width: 100%;text-align: center;font-size: 14px;}
+p#credits>a{font-weight: bold;color: #999;text-decoration: none;}
+img#github-logo{z-index:-1;position: fixed;bottom: -20px;right: 2%;opacity: 0.4;}
+  
 .confer {
 	margin-bottom: 4em;
 }
@@ -601,25 +654,6 @@ a.more{
 	  display:inline;
 }
 /*** Navigation ***/
-.nbs-flexisel-nav-left,
-.nbs-flexisel-nav-right {
-  width:44px;
-  height:60px;
-  position: absolute;
-  cursor: pointer;
-  z-index: 100;
-  display:none;
-}
-.nbs-flexisel-nav-left {
-  	left: -7em;
-	background: url(../images/left.png) 0px 0px no-repeat;
-  display:none;
-}
-.nbs-flexisel-nav-right {
-	right: -7em;
-	background: url(../images/right.png) 0px 0px no-repeat;
-  display:none;
-}
 .bottom-menu ul li {
 	display:inline-block;
 	margin:0 12px;
@@ -762,13 +796,6 @@ h3.sn {
 	padding:0.5em 0 0.3em 0;
 }
 /*-- about-section --*/
-.about-left h3,.about-right h3 {
-	color: #020202;
-	font-size: 2em;
-	font-weight: 500;
-	font-family: 'bebasregular';
-	margin-bottom: 0.8em;
-}
 .about-left h5 {
 	margin-bottom: 0.5em;
 	line-height:1.5em;
@@ -2437,7 +2464,7 @@ text-align: left;
 		margin-top:10px;
 	}
 	.menu-strip ul{
-		float:none;
+		float:right;
 		width:100%;
 	}
 	.menu-strip ul li{
