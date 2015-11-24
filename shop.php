@@ -1,7 +1,45 @@
+<?php
+$servername = "sulley.cah.ucf.edu";
+$username = "ca108653";
+$password = "andrea143";
+$dbname = "ca108653";
+
+// Create connection
+$con = mysqli_connect($servername, $username, $password, $dbname);
+
+// Check connection
+if (!$con) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+error_reporting(E_ALL);
+ini_set('display_errors','1');
+
+$productList = "";
+$result = mysqli_query($con, "SELECT * FROM shop"); 
+$productCount = mysqli_num_rows($result);
+if($productCount > 0){
+    while($row = mysqli_fetch_array($result)){
+        $id = $row["id"];
+        $prd_name = $row["prd_name"];
+        $prd_price = $row['prd_price'];
+        $desc = $row['desc'];
+        $productList .='<div class="col-xs-6 col-sm-4 col-md-3 img-portfolio">
+                <a href="product.php?id='.$id.'">
+                    <img class="img-responsive img-hover" src="img/'.$id.'.jpg" alt="">
+                </a>
+                <h3>
+                     <a href="product.php?id='.$id.'"><h3>'.$prd_name.'</h3></a>
+                     $'.$prd_price.'.99
+                </h3>
+
+            </div>';
+    }
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SoCalCustoms.com - Shows</title>
+	<title>SoCalCustoms.com - Shop</title>
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<script src="js/jquery.min.js"></script>
@@ -47,7 +85,7 @@
 					<li><a href="shows.html">SHOWS</a></li>
 					<li><a href="featured.html">FEATURED</a></li>
 					<li><a href="models.html">MODELS</a></li>
-					<li><a href="shop.html">SHOP</a></li>
+					<li><a href="shop.php">SHOP</a></li>
 					<li><a href="about.html">ABOUT</a></li>
 					<li><a href="contact.html">CONTACT</a></li>
 				</ul>
@@ -64,11 +102,11 @@
 			<!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-md-12">
-                <h2 class="page-header">Shows</h2>
+                <h2 class="page-header">The Shop</h2>
                 <ol class="breadcrumb">
                     <li><a href="index.html">Home</a>
                     </li>
-                    <li class="active">2015 Shows</li>
+                    <li class="active">Shop</li>
                 </ol>
             </div>
         </div>
@@ -76,62 +114,10 @@
 
         <!-- Projects Row -->
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/400x250" alt="">
-                </a>
-                <h3>
-                    <a href="portfolio-item.html">Show One</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/400x250" alt="">
-                </a>
-                <h3>
-                    <a href="portfolio-item.html">Show Two</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/400x250" alt="">
-                </a>
-                <h3>
-                    <a href="portfolio-item.html">Show Three</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/400x250" alt="">
-                </a>
-                <h3>
-                    <a href="portfolio-item.html">Show Four</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/400x250" alt="">
-                </a>
-                <h3>
-                    <a href="portfolio-item.html">Show Five</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 img-portfolio">
-                <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/400x250" alt="">
-                </a>
-                <h3>
-                    <a href="portfolio-item.html">Show Six</a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-            </div>
+            <?php echo $productList; ?>
         </div>
         <!-- /.row -->
+
         <hr>
 
         <!-- Pagination -->
