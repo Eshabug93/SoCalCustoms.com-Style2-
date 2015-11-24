@@ -188,35 +188,6 @@ a.btn {color:#666; text-align: center; text-decoration: none;}
 .one_half {width:50%; display: block; float:left;}
 .one_half.last {width:45%; margin-left:5%;}
 
-
-/*--start-search--*/
-.search {
-	position: relative;
-	padding: 5px 8px;
-	width: 35%;
-	border: 1px solid #bababa;
-	float:right;
-	background: #f8f8f8;
-}
-.search input[type="text"] {
-	outline: none;
-	color: #b3b3b3;
-	background: #f8f8f8;
-	font-size: 1em;
-	border: none;
-	width: 84.33%;
-}
-.search input[type="submit"] {
-	background: url('../images/sprit-1.png') no-repeat 1px 1px #202021;
-	border: none;
-	cursor: pointer;
-	position: absolute;
-	outline: none;
-	top: 0px;
-	right: -1px;
-	width: 32px;
-	height: 32px;
-}
 .menu-strip {
 	background: #232323;
 	padding: 1em 0em 0.8em 0px;
@@ -385,6 +356,8 @@ h5.breaking {
 
 /*Slider*/
 .slider-wrapper{
+	border-bottom: solid 7px;
+	border-bottom-color: #cf0000;
 	position:relative;
 	overflow:hidden;
 	width:100%;
@@ -448,6 +421,11 @@ h5.breaking {
 .orange{background:#EF7D00}
 .turky{background:#348E8A}
 .white{background:#fff; color:#333}
+
+.recent-shows{
+	margin-top: 2.5em;
+	margin-bottom: 2.5em;
+}
   
 .confer {
 	margin-bottom: 4em;
@@ -514,8 +492,8 @@ a.title {
 	font-size: 1em;
 	font-weight: bold;
 	margin-top: 10px;
-	text-transform:lowercase;
 	display:block;
+	text-align: center;
 	text-decoration:none;
 }
 a.title:hover {
@@ -586,7 +564,8 @@ a.more{
 	float:left;
 }
 .gallery {
-	margin: 2em 0;
+	margin-top: 2.5em;
+	margin-bottom: 2.5em;
 }
 .span_66 {
 	border-bottom: 1px dotted #202021;
@@ -680,9 +659,7 @@ a.more{
 	color:#cf0000;
 }
 .footer {
-	padding:1.5em 0;
 	border-top: 1px dotted #202021;
-	margin-top:2em;
 }
 .copyright {
 	padding:2em 0 1em 0;
@@ -1819,7 +1796,7 @@ text-align: left;
 
 @media screen and (max-width: 1440px) {
 	.wrap {
-		margin: 4em 0;
+		margin: 0;
 	}
 	.contact-form-row input[type="text"], .contact-form-row textarea {
 		margin-bottom: 12px;
@@ -1830,7 +1807,7 @@ text-align: left;
 }
 @media screen and (max-width: 1280px) {
 	.wrap {
-		margin: 3em 0;
+		margin: 0;
 	}
 	.about-left h3, .about-right h3, .team h3 {
 		font-size: 1.8em;
