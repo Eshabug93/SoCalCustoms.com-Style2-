@@ -52,67 +52,48 @@ mysqli_close($con);
 </head>
 
 <body>
-	<div class="container">	
-		<div class="wrap">
-			<div class="header">
-				<div class="header-left">
-					<div class="logo">
-						<a href="home.html">
-							<img src="img/logo.png" alt="SoCalCustoms.com Logo" />
-						</a>
-					</div>
-				</div>
-				<div class="social-icons">
-					<li><a href="#"><i class="twitter"></i></a></li>
-					<li><a href="#"><i class="facebook"></i></a></li>
-					<li><a href="#"><i class="rss"></i></a></li>
-				</div>
-				<div class="clearfix"></div>
-				<div class="header-right">
-					<div class="search">
-						<form>
-							<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}"/>
-							<input type="submit" value="">
-						</form>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-			<span class="menu"></span>
-			<div class="menu-strip">
-				<ul>           
-					<li><a href="home.html">HOME</a></li>
-					<li><a href="shows.html">SHOWS</a></li>
-					<li><a href="featured.html">FEATURED</a></li>
-					<li><a href="models.html">MODELS</a></li>
-					<li><a href="shop.php">SHOP</a></li>
-					<li><a href="about.html">ABOUT</a></li>
-					<li><a href="contact.html">CONTACT</a></li>
-				</ul>
-			</div>
-			<!-- script for menu -->
-			<script>
-				$( "span.menu" ).click(function() {
-				  $( ".menu-strip" ).slideToggle( "slow", function() {
-				  });
-				});
-			</script>
-			<!-- script for menu -->
+	<div class=social-header>
+    <div class="col-md-10 social-icons">
+      <li><a href="#"><i class="twitter"></i></a></li>
+      <li><a href="#"><i class="facebook"></i></a></li>
+      <li><a href="#"><i class="rss"></i></a></li>
+    </div>
+  </div>
+  <div class="social-header-bottom"></div>
+  <span class="menu"></span>
+  <div class="menu-strip">
+    <ul>           
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="shows.html">SHOWS</a></li>
+      <li><a href="featured.html">FEATURED</a></li>
+      <li><a href="models.html">MODELS</a></li>
+      <li><a href="shop.html">SHOP</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+  <!-- script for menu -->
+  <script>
+    $( "span.menu" ).click(function() {
+      $( ".menu-strip" ).slideToggle( "slow", function() {
+      });
+    });
+  </script>
 
 			<!-- Page Heading/Breadcrumbs -->
-        <div class="row">
-            <div class="col-md-12">
-                <h2 class="page-header">The Shop</h2>
-                <ol class="breadcrumb">
-                    <li><a href="home.html">Home</a>
-                    </li>
-                    <li><a href="shop.php">Shop</a>
-                    </li>
-                    <li class="active"><?php echo $prd_name; ?></li>
-                </ol>
-            </div>
-        </div>
+			<div class="container">
+        <div class="wrap">
+      		<div class="row">
+          	<div class="col-md-12">
+              <h2 class="page-header">The Shop</h2>
+              <ol class="breadcrumb">
+                <li><a href="home.html">Home</a>
+                </li>
+                <li><a href="shop.php">Shop</a>
+                </li>
+                <li class="active"><?php echo $prd_name; ?></li>
+              </ol>
+          	</div>
+      		</div>
         <!-- /.row -->
 
         <!-- Projects Row -->
@@ -156,6 +137,8 @@ mysqli_close($con);
                 
             </div>
         </div>
+      </div>
+    </div>
         <!-- /.row -->
 
         <hr>
