@@ -422,6 +422,13 @@ h5.breaking {
 .turky{background:#348E8A}
 .white{background:#fff; color:#333}
 
+.banner {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-bottom: 7px solid #cf0000;
+}
+
 .recent-shows{
 	margin-top: 2.5em;
 	margin-bottom: 2.5em;
