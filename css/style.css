@@ -873,7 +873,7 @@ h3.sn {
 	margin-bottom: 0.8em;
 }
 .team-grid img {
-	width:100%:
+	width:100%;
 }
 .team-grid p {
 	color: #848484;
@@ -900,7 +900,7 @@ h3.sn {
 	margin-bottom: 0.8em;
 }
 .map{
-	width:100%:
+	width:100%;
 }
 .map iframe{
 	min-height:350px;
@@ -2662,7 +2662,7 @@ text-align: left;
 	}
 	.desc p {
 		font-size:1em;
-		margin-top:0.em;
+		margin-top:0em;
 	}
 	ul.comment-list img {
 		width: 20%;
@@ -2723,4 +2723,3 @@ text-align: left;
 	.signup input[type="text"] {
 		width: 100%;
 	}
-}
