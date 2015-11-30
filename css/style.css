@@ -361,7 +361,10 @@ h5.breaking {
 	position:relative;
 	overflow:hidden;
 	width:100%;
+  background-color: #151919;
 	background-image: url("../img/logo-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .slider{
