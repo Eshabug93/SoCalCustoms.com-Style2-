@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <!--Image Slider is from JSSOR.com with a License of MIT so it is free to use-->
+<head>
+	<title>SoCalCustoms.com - Ashley Estrada</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/reset.css" type="text/css"   charset="utf-8" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/fractionslider.css">
+  <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-1.9.0.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/jquery.fractionslider.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+  <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+  
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+</head>
+
+<body>
+  <script>
+    jssor_1_slider_init = function() { 
+      var jssor_1_SlideshowTransitions = [
+        {$Duration:1200,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+        {$Duration:1200,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+      ];
+      
+      var jssor_1_options = {
+        $AutoPlay: true,
+        $SlideshowOptions: {
+          $Class: $JssorSlideshowRunner$,
+          $Transitions: jssor_1_SlideshowTransitions,
+          $TransitionsOrder: 1
+        },
+        $ArrowNavigatorOptions: {
+          $Class: $JssorArrowNavigator$
+        },
+        $ThumbnailNavigatorOptions: {
+          $Class: $JssorThumbnailNavigator$,
+          $Cols: 10,
+          $SpacingX: 8,
+          $SpacingY: 8,
+          $Align: 360
+        }
+      };
+      
+      var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+      
+      //responsive code begin
+      //you can remove responsive code if you don't want the slider scales while window resizing
+      function ScaleSlider() {
+          var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+          if (refSize) {
+              refSize = Math.min(refSize, 800);
+              jssor_1_slider.$ScaleWidth(refSize);
+          }
+          else {
+              window.setTimeout(ScaleSlider, 30);
+          }
+      }
+      ScaleSlider();
+      $Jssor$.$AddEvent(window, "load", ScaleSlider);
+      $Jssor$.$AddEvent(window, "resize", $Jssor$.$WindowResizeFilter(window, ScaleSlider));
+      $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+      //responsive code end
+    };
+  </script>
+  <div class="social-header">
+    <div class="col-md-10 social-icons">
+      <li><a href="#"><i class="twitter"></i></a></li>
+      <li><a href="#"><i class="facebook"></i></a></li>
+      <li><a href="#"><i class="rss"></i></a></li>
+    </div>
+  </div>
+  <span class="menu"></span>
+  <div class="menu-strip">
+    <ul>           
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="shows.html">SHOWS</a></li>
+      <li><a href="featured.html">FEATURED</a></li>
+      <li><a href="models.html">MODELS</a></li>
+      <li><a href="shop.html">SHOP</a></li>
+      <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+  </div>
+  <!-- script for menu -->
+  <script>
+    $( "span.menu" ).click(function() {
+      $( ".menu-strip" ).slideToggle( "slow", function() {
+      });
+    });
+  </script>
+	<!-- Page Heading/Breadcrumbs -->
+  <div class="container">
+    <div class="wrap">
+      <div class="row">
+        <div class="col-md-12">
+          <!--<h2 class="page-header">The Models</h2>-->
+          <ol class="breadcrumb">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="models.html">Models</a></li>
+            <li class="active">Ashley Estrada</li>
+          </ol>
+        </div>
+      <!-- Projects Row -->
+        <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;">
+        <!-- Loading Screen -->
+          <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+          </div>
+          <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 356px; overflow: hidden;">  
+            <div data-p="144.50" style="display: none;">
+              <img data-u="image" src="img/models/ashley/01.jpg" />
+              <img data-u="thumb" src="img/models/ashley/thumb-01.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+              <img data-u="image" src="img/models/ashley/02.jpg" />
+              <img data-u="thumb" src="img/models/ashley/thumb-02.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+              <img data-u="image" src="img/models/ashley/03.jpg" />
+              <img data-u="thumb" src="img/models/ashley/thumb-03.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+              <img data-u="image" src="img/models/ashley/04.jpg" />
+              <img data-u="thumb" src="img/models/ashley/thumb-04.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+              <img data-u="image" src="img/models/ashley/05.jpg" />
+              <img data-u="thumb" src="img/models/ashley/thumb-05.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+              <img data-u="image" src="img/models/ashley/06.jpg" />
+              <img data-u="thumb" src="img/models/ashley/thumb-06.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+              <img data-u="image" src="img/models/ashley/07.jpg" />
+              <img data-u="thumb" src="img/models/ashley/thumb-07.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+              <img data-u="image" src="img/models/ashley/08.jpg" />
+              <img data-u="thumb" src="img/models/ashley/thumb-08.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+              <img data-u="image" src="img/models/ashley/09.jpg" />
+              <img data-u="thumb" src="img/models/ashley/thumb-09.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+              <img data-u="image" src="img/models/ashley/10.jpg" />
+              <img data-u="thumb" src="img/models/ashley/thumb-10.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+              <img data-u="image" src="img/models/ashley/11.jpg" />
+              <img data-u="thumb" src="img/models/ashley/thumb-11.jpg" />
+            </div>
+          </div>
+          <!-- Thumbnail Navigator -->
+          <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
+            <!-- Thumbnail Item Skin Begin -->
+            <div data-u="slides" style="cursor: default;">
+              <div data-u="prototype" class="p">
+                <div class="w">
+                  <div data-u="thumbnailtemplate" class="t"></div>
+                </div>
+                <div class="c"></div>
+              </div>
+            </div>
+              <!-- Thumbnail Item Skin End -->
+          </div>
+          <!-- Arrow Navigator -->
+          <span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span>
+          <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>
+        </div>
+        <script>
+            jssor_1_slider_init();
+        </script>
+        <div class="col-md-12">
+          <div class="about-section">
+            <div class="col-md-7 about-left">
+              <div class="main-title-head">
+                <h3>About Ashley Estrada</h3>
+                <div class="clearfix"></div>
+              </div>
+              <div class="col-xs-6">
+                <h3>Hometown: </h3><p>Huntington Beach</p>
+                <h3>Age: </h3><p>23</p>
+                <h3>Height: </h3><p>5'3"</p>
+                <h3>Weight: </h3><p>106lbs</p>
+                <h3>Hair: </h3><p>Blondish/Brownish</p>
+                <h3>Eyes: </h3><p>Green</p>
+                <h3>Dress: </h3><p>Small</p>
+                <h3>Shoe: </h3><p>7</p>
+                <h3>Body Type: </h3><p>Slim with Curves</p>
+                <h3>Ethnicity: </h3><p>Caucasian/Hispanic</p>
+                <h3>Status: </h3><p>Relationship</p>
+                <h3>Occupation: </h3><p>Dental Assistant/Model/Go-G0 Dancer</p>
+                <h3>Turn-Ons: </h3><p>Someone who can make me laugh and that is confident - nice smile </p>
+              </div>
+              <div class="col-xs-6">
+                <h3>Turn-Offs: </h3><p>Bad personality, no motivation, bad hygiene </p>
+                <h3>Hobbies: </h3><p>Relaxing in the hot tub, tanning, dancing and hanging out with my friends/family</p>
+                <h3>Favorite Food: </h3><p>Sushi</p>
+                <h3>Favorite Color: </h3><p>Pink</p>
+                <h3>Favorite Music: </h3><p>Classic Rock - ZZ Top - Tom Petty and Reggae/Sublime</p>
+                <h3>Favorite Books/Magazines: </h3><p>Don't read I do it's Star Magazine lol</p>
+                <h3>Favorite Movie: </h3><p>The Hangover</p>
+                <h3>Favorite Thing in the World: </h3><p>My Family</p>
+                <h3>Dream Vacation: </h3><p>The Bahamas</p>
+                <h3>Dream Car: </h3><p>Lamborghini</p>
+              </div>
+            </div>
+            <div class="col-md-5 about-right">
+              <div class="main-title-head">
+                <h3>Q&A</h3>
+                <div class="clearfix"></div>
+              </div>
+              <div class="offer">
+                <h3>When did you start modeling? </h3>
+                <div class="clearfix"></div>
+                <p>I started about 4 years ago... My friend Heather who owns Chynna Dolls is the one who gave me the confidence to become a model and helped me alot. Love her!</p>
+              </div>
+              <div class="offer">
+                <h3>What is your favorite thing about being a model?</h3>
+                <div class="clearfix"></div>
+                <p>I love the confidence you get .. I love taking pictures, being sexy, getting to go to all the events and meeting a lot of awesome people.</p>
+              </div>
+              <div class="offer">
+                <h3>What area of modeling are you most interested in?</h3>
+                <div class="clearfix"></div>
+                <p>Swimwear, Lingerie, Maxim style...</p>
+              </div>
+              <div class="offer">
+                <h3>What goals are you pursuing for the future/what would you like to accomplish?</h3>
+                <div class="clearfix"></div>
+                <p>As far as modeling - I do it for fun and I am going to keep on doing it as long as it makes me happy/as long has I can.. Hopefully get my name out there and get in a few more magazines. For my day time job as a dental assistant I want to take it more seriously and I want to get my RDA...</p>
+              </div>
+              <div class="offer">
+                <h3>Are there any magazines you would like to see yourself on the cover of? </h3>
+                <div class="clearfix"></div>
+                <p>FHM - MAXIM - IMPORT</p>
+              </div>
+              <div class="offer">
+                <h3>What are your most memorable modeling experiences? </h3>
+                <div class="clearfix"></div>
+                <p>My most memorable would be modeling for Chynna Dolls. It doesn't even feel like work because I get to party with my girls. But every modeling gig has given me memories.</p>
+              </div>
+              <div class="offer">
+                <h3>Have you had any modeling experiences you wish you could forget?</h3>
+                <div class="clearfix"></div>
+                <p>No.. knock on wood lol</p>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+            <!-- /.row -->
+            <hr>
+        </div>
+      </div>
+			<div class="footer text-center">
+				<div class="bottom-menu">
+					<ul>                 
+						<li><a href="home.html">HOME</a></li> |
+						<li><a href="shows.html">SHOWS</a></li> |
+						<li><a href="featured.html">FEATURED</a></li> |
+						<li><a href="models.html">MODELS</a></li> |
+						<li><a href="shop.html">SHOP</a></li> |
+						<li><a href="about.html">ABOUT</a></li> |
+						<li><a href="contact.html">CONTACT</a></li> 						
+					</ul>
+				</div>
+				<div class="copyright text-center">
+					<p>NOT FOR OFFICIAL USE. Created by Group 0011-5 for DIG4104C Web Design Workshop. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
