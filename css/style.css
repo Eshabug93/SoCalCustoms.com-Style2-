@@ -903,10 +903,10 @@ h3.sn {
 	padding:3em 0;
 }
 .contact-section-head h3 {
-	color: #020202;
+	color: #ffffff;
 	font-size: 2em;
 	font-weight: 500;
-	font-family: 'bebasregular';
+	font-family: 'ea-sports';
 	margin-bottom: 0.8em;
 }
 .map{
@@ -917,16 +917,22 @@ h3.sn {
 	width:100%;
 }
 .address p {
-	color: #777777;
+	color: #cf0000;
 	font-size: 1.15em;
 	font-weight: 500;
-	line-height: 1.5em;
 }
 .address h5 {
-	color: #222222;
+	color: #ffffff;
 	font-size: 1.3em;
 	font-weight: 600;
-	margin-bottom:0.8em;
+	margin-top:0.6em;  
+	margin-bottom:0.4em;
+}
+.address h6 {
+	color: #ffffff;
+  font-family: 'myriadpro-semibold';
+	margin-bottom:0.4em;   
+  
 }
 p.bottom{
 	margin-bottom:0.9em;
