@@ -120,7 +120,7 @@ label{
 .social-icons i {
 	width:30px;
 	height:30px;
-	background: url('../images/img-sprite.png') no-repeat 0px 0px;
+	background: url('../img/img-sprite.png') no-repeat 0px 0px;
 	display:inline-block;
 }
 .social-icons i:hover {
@@ -1027,7 +1027,7 @@ img.code{
 	color:#ec098d;
 }
 .might-top a i{
-	background: url(../images/img-sprite.png)no-repeat -103px -103px;
+	background: url(../img/img-sprite.png)no-repeat -103px -103px;
 	width: 16px;
 	height: 16px;
 	display: inline-block;
