@@ -430,6 +430,11 @@ h5.breaking {
 }
 #slider3-pager a {
 }
+/*shop*/
+.item-title{
+	color:#ffffff;
+	font-size: 1em;
+}
 /*-- responsive-mediaqueries --*/
 @media (max-width:768px){
 	#slider3-pager a {
