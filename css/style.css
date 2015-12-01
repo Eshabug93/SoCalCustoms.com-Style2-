@@ -144,7 +144,12 @@ i.rss {
 	display:inline-block;
 	  margin: 0 0.6em;
 }
-
+.img-portfolio{
+	margin-bottom: 10px;
+}
+.img-portfolio h3{
+	font-size: 1.4em;
+}
 .btn {padding:10px 20px; background: #F4F4F2;}
 .btn_red {background:#DBDBDB; color: #FFF;}
 
@@ -1002,6 +1007,10 @@ h3.sn {
 	font-size: 13px;
 	font-weight: bold;
 	margin-top:1em;
+}
+/*features-text*/
+p.features-text{
+	color: #848484;
 }
 /*-- contact --*/
 .contact-section{
