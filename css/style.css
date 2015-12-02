@@ -480,6 +480,7 @@ h5.breaking {
 	background-image: url("../img/logo-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  font-size: 2em;
 }
 
 .slider{
@@ -519,26 +520,38 @@ h5.breaking {
 }*/
 
 .claim{
-	line-height:100%
+	line-height:100%;
+	padding: 10px;
 }	
 
 .teaser{
-	padding:0.5% 1.5%;
-	font-size:14px;
-	 line-height:100%
+	padding:10px;
+	font-size: 2em;
+	line-height:100%
 }
 
 .small{
 	width:250px;
-   padding-left:0; padding-right:0px;
+  padding:5px; 
 	text-align:center;
 }
 
-.light-green{background:#95C542;}
-.green{background:#7CB761}
-.orange{background:#EF7D00}
-.turky{background:#348E8A}
-.white{background:#fff; color:#333}
+.light-green{
+	background:#95C542;
+}
+.green{
+	background:#7CB761;
+}
+.gray{
+	background:rgba(0, 0, 0, .5);
+}
+.red{
+	background:#cf0000;
+}
+.white{
+	background:#fff;
+	color:#333;
+}
 
 .banner {
 	width: 100%;
@@ -2449,3 +2462,59 @@ text-align: left;
 	.signup input[type="text"] {
 		width: 100%;
 	}
+}
+
+/* upload.html styles */
+.topmarg5 {
+	margin-top: 5%;
+}
+
+.uploadTxt {
+	font-size: 2em;
+}
+
+.btn-default {
+	background-color: #cf0000;
+	color: #ffffff;
+	border: #cf0000;
+}
+
+.btn-default:hover {
+	background-color: #ffffff;
+	color: #cf0000;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+
+input[readonly] {
+  background-color: #232323;
+  border: #232323;
+  cursor: text !important;
+  color: #ffffff;
+}
+
+.titleTxt {
+	font-size: 2.5em;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+}
+
+/* end upload.html styles  */

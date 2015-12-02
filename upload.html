@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SoCalCustoms.com - Upload</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/reset.css" type="text/css"   charset="utf-8" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/fractionslider.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-1.9.0.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/jquery.fractionslider.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+  <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+  </head>
+
+  <body>
+
+	  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <div class="social-header">
+  	<div class="container-fluid container">
+			<div class="col-sm-12 social-icons">
+			  <li><a href="https://www.facebook.com/socalcustomsdotcom" target="_blank"><i class="twitter"></i></a></li>
+			  <li><a href="https://www.twitter.com/socalcustoms" target="_blank"><i class="facebook"></i></a></li>
+			  <li><a href="https://www.instagram.com/socalcustoms" target="_blank"><i class="rss"></i></a></li>
+			</div>
+		</div>
+  </div>
+  <span class="menu"></span>
+  <div class="menu-strip">
+  	<nav class="navbar navbar-default">
+  		<div class="container-fluid container">
+  			<div class="navbar-header">
+  				<a class="navbar-brand" href="home.html"><img src="img/logo.png" alt="logo"></a>
+  			</div>
+  			<div class="collapse navbar-collapse">
+			    <ul class="nav">           
+			      <li><a href="home.html">HOME</a></li>
+			      <li><a href="shows.html">SHOWS</a></li>
+			      <li><a href="featured.html">FEATURED</a></li>
+			      <li><a href="models.html">MODELS</a></li>
+			      <li><a href="shop.html">SHOP</a></li>
+			      <li><a href="contact.html">CONTACT</a></li>
+			    </ul>
+			  </div>
+		  </div>
+		</nav>
+  </div>
+  <!-- script for menu -->
+  <script>
+    $( "span.menu" ).click(function() {
+      $( ".menu-strip" ).slideToggle( "slow", function() {
+      });
+    });
+  </script>
+
+  
+    <div class="container">
+		<div class="wrap">
+			<div class="row">
+				<form class="col-sm-12 topmarg5" action="process.php" method="post" enctype="multipart/form-data" >
+					<div class="text-center">
+						<h1 class='uploadTxt'>Gallery Upload</h1>
+					</div>
+					<div class="col-xs-12 col-md-8 col-md-offset-2 topmarg5">
+						<div class="input-group">
+							<span class="input-group-btn">
+								<span class="file-input btn btn-default btn-file">
+									 Browse <input type="file" name="upload[]" id="upload" multiple>
+								</span>
+							</span>
+							<input type="text" class="form-control" readonly>
+						</div>			
+					</div>				
+            
+					<div class="col-xs-12 col-md-8 col-md-offset-2 topmarg5">
+						<input class="btn-lg btn-default btn-submit" type="submit" value="Upload Images" name="submit">
+					</div>
+				</form>
+			</div>
+		</div>
+    </div> <!-- /container -->
+	
+	<div class="footer text-center">
+		<div class="bottom-menu">
+			<ul>                 
+				<li><a href="home.html">HOME</a></li> |
+				<li><a href="shows.html">SHOWS</a></li> |
+				<li><a href="featured.html">FEATURED</a></li> |
+				<li><a href="models.html">MODELS</a></li> |
+				<li><a href="shop.html">SHOP</a></li> |
+				<li><a href="contact.html">CONTACT</a></li> |
+				<li><a href="upload.html">ADMIN</a></li>
+			</ul>
+		</div>
+		<div class="copyright text-center">
+			<p>NOT FOR OFFICIAL USE. Created by Group 0011-5 for DIG4104C Web Design Workshop. </p>
+		</div>
+	</div>
+
+
+    <!--scripts -->
+	<script src="js/upload.js"></script>
+	
+	
+  </body>
+</html>
